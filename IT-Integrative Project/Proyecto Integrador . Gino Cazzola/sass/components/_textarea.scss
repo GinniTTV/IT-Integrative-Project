@@ -1,0 +1,38 @@
+textarea:focus {
+    background-color: $secondary-color;
+}
+
+textarea {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border: 2px inset rgba(0, 0, 0, 0.759);
+    border-radius: 0.25rem;
+    background-color: lighten($color: $success-color, $amount: 30);
+    min-height: 13.4rem;
+    padding: 0.124rem 0.5rem;
+    width: 23.75rem;
+    resize: none;
+   
+}
+
+.h-textarea-contacto {
+    min-height: 7rem;
+
+}
+@media (min-width: 620px) and (max-width: 900px) {
+    textarea {
+        width: 30.89rem;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    textarea {
+        width: 19.75rem;
+    }
+
+@media (max-width: 620px) {
+    textarea {
+        width: 15.74rem;
+    }
+}
+
+}

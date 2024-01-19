@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,200&display=swap');
+
+//*Colors// 08040c-f4ff91-e4e9ee-F53D71-631481-EFDDF4-F48DFF-c07aeb-CDE3D0-4E31F5-e7cb85-63559e-4E31F5-5c55bd * //
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/helpers";
+@import "./utils/animations";
+
+// Vendors //
+
+@import "./components/button";
+@import "./components/card";
+@import "./components/fieldset";
+@import "./components/form";
+@import "./components/icon";
+@import "./components/iframe";
+@import "./components/img";
+@import "./components/input";
+@import "./components/label";
+@import "./components/textarea";
+
+//.............//
+
+@import "./base/base";
+@import "./base/typography";
+
+//.............//
+
+@import "./layout/header-container";
+@import "./layout/main-container";
+@import "./layout/footer-container";
+
+// Pages
+// Themes
+

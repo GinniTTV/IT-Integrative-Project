@@ -1,0 +1,45 @@
+input {
+    background-color: lighten($color: $success-color, $amount: 30);
+    color: $primary-color;
+    padding: 0.4rem;
+    width: 23rem;
+    border-radius: 0.23rem;
+    
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    input{
+        width: 19rem;
+    }
+}
+@media (min-width: 620px) and (max-width: 900px) {
+    input{
+        width: 31rem;
+    }
+    .in-shortDes {
+        width: 31rem;
+    }
+}
+@media (max-width: 620px) {
+    input{
+        width: 15rem;
+    }
+    .in-shortDes {
+        width: 15rem;
+    }
+}
+
+.i-search {
+    width: 15rem;
+    background-color:bisque;
+    &:hover {
+        background-color: #efefeff5;
+    }
+}
+.input-msg-error {
+    display: none;
+    color: $error-color;
+}
+input:focus {
+    background-color: $secondary-color;
+}

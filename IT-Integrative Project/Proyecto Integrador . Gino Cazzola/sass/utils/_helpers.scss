@@ -1,0 +1,47 @@
+$colors: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    error: $error-color,
+    success: $success-color,
+);
+
+.d-flex {
+    display: flex;
+}
+.d-center {
+    text-align: center;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+} 
+
+@each $name, $value in $colors {
+    .bg-#{$name} {
+        background-color: $value;
+    }
+
+    .color-#{$name} {
+        color: $value;
+    }
+
+    .border-#{$name} {
+        border: 1px solid $value;
+    }
+
+}
+
+@for $i from 1 through 10 {
+    .h-#{$i * 10} {
+        height: $i * 9%;
+    }
+    .w-#{$i * 10} {
+        width: $i * 9%;
+    }
+}
+@media (max-width: 1050px) {
+    .d-none {
+        display: none;
+    }
+}
+
